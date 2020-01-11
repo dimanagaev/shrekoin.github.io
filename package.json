@@ -1,11 +1,14 @@
 {
   "name": "shrekoin",
   "version": "1.0.0",
-  "description": "",
+  "description": "",\
+  "homepage":"./"
   "main": "index.js",
   "scripts": {
     "start": "cross-env PORT=10888 react-scripts start",
     "build": "react-scripts build"
+    "predeploy": "npm run build"
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
